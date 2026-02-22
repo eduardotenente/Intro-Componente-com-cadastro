@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <main>
+        <article id="texto">
+            <h1>Aprenda a programar observando os outros.</h1>
+            <p>Veja como desenvolvedores experientes resolvem problemas em tempo real. Assistir a tutoriais com roteiro é ótimo, mas entender como os desenvolvedores pensam é inestimável.</p>
+        </article>
+
+        <section>
+            <h3><strong>Experimente grátis por 7 dias</strong> e depois pague R$20/mês!</h3>
+        </section>
+
+        <article id="cadastro">
+            <form action="script/validacao.js" method="post" autocomplete="on">
+                <label for="nm1"></label>
+                <input type="text" name="nm1" id="nm1" required placeholder="Primeiro Nome">
+
+                <label for="nm2"></label>
+                <input type="text" name="nm2" id="nm2" required placeholder="Último Nome">
+
+                <label for="em"></label>
+                <input type="email" name="em" id="em" required minlength="8" placeholder="Email para contato"> 
+
+                <label for="senha"></label>
+                <input type="password" name="senha" id="senha" required minlength="5" placeholder="Senha">
+
+                <input type="button" value="GANHE SEU CAMINHO GRÁTIS">
+                <p id="txtp">Ao clicar no botão, você aceita e concorda com os <strong id="cor">Termos e Serviços</strong></p>
+            </form>
+        </article>
+    </main>
+</body>
+</html>
